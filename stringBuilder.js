@@ -14,6 +14,10 @@ class StringBuilder {
   toArray() {
     return this.toArray();
   }
+
+  append(str){
+    return this.string +=  str;
+  }
 }
 
 

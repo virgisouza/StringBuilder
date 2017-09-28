@@ -37,6 +37,14 @@ describe ('StringBuilder', function () {
 
   it ('should have a append method', function () {
     sb.should.have.property('append');
-  })
+  });
+
+  it('append method should append string', function(){
+    expect(sb.append('hey')).to.equal('foohey');
+  });
+
+  it('should have a toString method', function(){
+    expect(sb).to.have.property('toString');
+  });
 
 });
