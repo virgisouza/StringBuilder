@@ -36,6 +36,9 @@ describe ('StringBuilder', function () {
     it('should have a capitalize method', function () {
       sb.should.have.property('capitalize');
     });
+    it('should capitalize first letter of string', function(){
+      expect(sb.capitalize()).to.equal('Foo');
+    });
   });
 
   describe ('toArray method', function(){
@@ -65,7 +68,7 @@ describe ('StringBuilder', function () {
 
     it('should return string with SB: + attached', function () {
       expect(sb.toString()).to.equal('Sb: foo');
-    })
+    });
 
   });
 

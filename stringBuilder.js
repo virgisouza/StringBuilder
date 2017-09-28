@@ -11,7 +11,12 @@ class StringBuilder {
   }
 
   capitalize(){
-    return this.toUpperCase();
+    let array = this.string.split("");
+    let firstLetter = array.shift();
+    let capitalizedFirst = firstLetter.toUpperCase();
+    array.unshift(capitalizedFirst);
+    let joinedArray = array.join("");
+    return joinedArray;
   }
 
   toArray() {
