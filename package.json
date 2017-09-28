@@ -1,0 +1,26 @@
+{
+  "name": "StringBuilder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stringBuilder.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virgisouza/StringBuilder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/virgisouza/StringBuilder/issues"
+  },
+  "homepage": "https://github.com/virgisouza/StringBuilder#readme",
+  "devDependencies": {
+    "chai": "^4.1.2"
+  }
+}
