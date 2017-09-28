@@ -6,6 +6,10 @@ class StringBuilder {
   reverse () {
     return this.reverse();
   }
+
+  capitalize(){
+    return this.toUpperCase();
+  }
 }
 
 
