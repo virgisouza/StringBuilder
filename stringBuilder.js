@@ -10,6 +10,10 @@ class StringBuilder {
   capitalize(){
     return this.toUpperCase();
   }
+
+  toArray() {
+    return this.toArray();
+  }
 }
 
 

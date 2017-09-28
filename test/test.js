@@ -31,8 +31,12 @@ describe ('StringBuilder', function () {
     sb.should.have.property('capitalize');
   });
 
-  // it ('should have a toArray method', function (){
-  //   expect()
-  // })
+  it ('should have a toArray method', function (){
+    sb.should.have.property('toArray');
+  });
+
+  it ('should have a append method', function () {
+    sb.should.have.property('append');
+  })
 
 });
