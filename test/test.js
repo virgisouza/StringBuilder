@@ -27,6 +27,10 @@ describe ('StringBuilder', function () {
     sb.should.have.property('reverse');
   });
 
+  it('reverse method should reverse string', function () {
+    expect(sb.reverse()).to.equal('oof');
+  });
+
   it('should have a capitalize method', function () {
     sb.should.have.property('capitalize');
   });
@@ -44,7 +48,8 @@ describe ('StringBuilder', function () {
   });
 
   it('should have a toString method', function(){
-    expect(sb).to.have.property('toString');
+    sb.should.have.property('toString');
   });
+
 
 });

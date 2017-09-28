@@ -4,7 +4,10 @@ class StringBuilder {
   }
 
   reverse () {
-    return this.reverse();
+    let split = this.string.split("");
+    let reverseArr = split.reverse();
+    let joinArr = reverseArr.join("");
+    return joinArr;
   }
 
   capitalize(){
@@ -18,8 +21,12 @@ class StringBuilder {
   append(str){
     return this.string +=  str;
   }
-}
 
+  toString() {
+    return this.toString();
+  }
+
+}
 
 
 module.exports = StringBuilder;
