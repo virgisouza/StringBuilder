@@ -23,32 +23,41 @@ describe ('StringBuilder', function () {
     sb.string.should.be.a('string');
   });
 
-  it('should have a reverse method', function(){
-    sb.should.have.property('reverse');
+  describe ('Reverse method', function(){
+    it('should have a reverse method', function(){
+      sb.should.have.property('reverse');
+    });
+    it('reverse method should reverse string', function () {
+      expect(sb.reverse()).to.equal('oof');
+    });
   });
 
-  it('reverse method should reverse string', function () {
-    expect(sb.reverse()).to.equal('oof');
+  describe ('Capitalize method', function(){
+    it('should have a capitalize method', function () {
+      sb.should.have.property('capitalize');
+    });
   });
 
-  it('should have a capitalize method', function () {
-    sb.should.have.property('capitalize');
+  describe ('toArray method', function(){
+    it ('should have a toArray method', function (){
+      sb.should.have.property('toArray');
+    });
   });
 
-  it ('should have a toArray method', function (){
-    sb.should.have.property('toArray');
+  describe ('Append method', function(){
+    it('append method should append string', function(){
+      expect(sb.append('hey')).to.equal('foohey');
+    });
+
+    it ('should have a append method', function () {
+      sb.should.have.property('append');
+    });
   });
 
-  it ('should have a append method', function () {
-    sb.should.have.property('append');
-  });
-
-  it('append method should append string', function(){
-    expect(sb.append('hey')).to.equal('foohey');
-  });
-
-  it('should have a toString method', function(){
-    sb.should.have.property('toString');
+  describe('toString method', function(){
+    it('should have a toString method', function(){
+      sb.should.have.property('toString');
+    });
   });
 
 
