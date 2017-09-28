@@ -42,6 +42,10 @@ describe ('StringBuilder', function () {
     it ('should have a toArray method', function (){
       sb.should.have.property('toArray');
     });
+
+    it('should turn string into an array', function () {
+      expect(sb.toArray()).to.deep.equal(['foo']);
+    });
   });
 
   describe ('Append method', function(){
@@ -58,6 +62,11 @@ describe ('StringBuilder', function () {
     it('should have a toString method', function(){
       sb.should.have.property('toString');
     });
+
+    it('should return string with SB: + attached', function () {
+      expect(sb.toString()).to.equal('Sb: foo');
+    })
+
   });
 
 

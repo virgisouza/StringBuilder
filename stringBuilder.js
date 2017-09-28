@@ -15,7 +15,9 @@ class StringBuilder {
   }
 
   toArray() {
-    return this.toArray();
+    let emptyArr = [];
+    emptyArr.push(this.string);
+    return emptyArr;
   }
 
   append(str){
@@ -23,7 +25,7 @@ class StringBuilder {
   }
 
   toString() {
-    return this.toString();
+    return "Sb: " + this.string;
   }
 
 }
